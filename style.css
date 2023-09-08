@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  list-style: none;
+}
+
+:root {
+  /* Backgrounds */
+  --background-header: #151515;
+  --background-doom: #720778;
+  /* Fonts-Family */
+  --font-family: @import
+    url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+  --font-family-medium: @import
+    url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,500&display=swap");
+  /* Colors-Fonts */
+  --font-color: #efe7f0;
+}
+
+body {
+  background: var(--background-doom);
+}
+
+.header-nav {
+  background: var(--background-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img-log {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  background-image: url(./img/onepiece.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 4rem;
+}
